@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <script src="js/test1.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    
+    <form id="monform" onsubmit="event.preventDefault()">
+    <p> Sexe : 
+        <input type="radio" id="radiob1" name="radiob"></input> Homme
+        <input type="radio" id="radiob2" name=radiob></input> Femme
+    </p>
+
+    <p>Nom: <input type="text" id="nom" class="checkable" ></input></p>
+    <p>Prenom : <input type="text" id="prenom" class="checkable"></input></p>
+    <div class="tooltip">
+        <p>Age : <input type="text" id="age" class="checkable"></input></p>
+        <span class="tooltiptext">L'age doit etre en 5 et 140</span>
+    </div>
+    <br>
+    <div class="tooltip">
+        <p>Pseudo : <input type ="text" id="pseudo" class=checkable></p>
+        <span class="tooltiptext">Le pseudo doit avoir entre 5 et 16 caractères</span>
+    </div>
+    <br>
+    <div class="tooltip">
+        <p>Password : <input type="password" id="pass1" class="checkable"></input></p>
+        <span class="tooltiptext">Le mot de passe doit avoir  au moins 1 minuscule 1 majuscule 1 chiffre et au minimum 8 caracteres</span>
+    </div>
+    <br>
+    <div class="tooltip">
+        <p>Password(confirmation): <input type="password" id="pass2" class="checkable"></input> </p>
+        <span class="tooltiptext">Les mots de passe ne correspondent pas</span>
+    </div>
+    
+
+    <p>
+        Pays : <SELECT name="maliste" size="1">
+        <option>Angleterre</option>
+        <option>France</option>    
+        <option>Belgique</option>
+        <option>Suede</option>
+        </SELECT>
+    </p>
+    <p><input type="checkbox" id="spam"></input> Please spam me </p>
+
+    <button onclick="checkSubmit()">M'inscrire</button>
+    <button onclick=Reset()>Reset le formulaire</button>
+
+  
+
+</form>
+
+
+</body>
+</html>
