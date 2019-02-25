@@ -17,7 +17,7 @@ function Reset()
     document.getElementById("radiob1").checked=false;
     document.getElementById("radiob2").checked=false;
     document.getElementById("spam").checked=false;
-// adresse mail prof : manoel.deligny@gmail.com
+
 
 }
 
